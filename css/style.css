@@ -121,4 +121,5 @@ header li a{
 .section_main__list_icons{
     position: absolute;
     margin: auto;
+    display: flex;
 }
