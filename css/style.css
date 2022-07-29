@@ -113,14 +113,9 @@ header li a{
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 400;
-    font-size: 40px;
+    font-size: 14px;
     line-height: 20px;
     color: #C0C0C0;
 
 }
-.section_main__list_icons{
-    position: absolute;
-    margin: auto;
-    display: flex;
-    justify-content: space-between;
-}
+
