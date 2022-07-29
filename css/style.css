@@ -122,4 +122,5 @@ header li a{
     position: absolute;
     margin: auto;
     display: flex;
+    justify-content: space-between;
 }
