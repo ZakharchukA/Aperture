@@ -1,3 +1,15 @@
+@font-face {
+    font-family: 'poppinsregular';
+    src: url('../fonts/poppins-regular-webfont.eot');
+    src: url('../fonts/poppins-regular-webfont.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/poppins-regular-webfont.woff2') format('woff2'),
+    url('../fonts/poppins-regular-webfont.woff') format('woff'),
+    url('../fonts/poppins-regular-webfont.ttf') format('truetype'),
+    url('../fonts/poppins-regular-webfont.svg#poppinsregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
 *{
     padding: 0;
     margin: 0;
@@ -45,11 +57,7 @@ header li:last-of-type{
     padding: 9px 20px 13px 20px;
 }
 header li:last-of-type a{
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 20px;
+    font: 16px/20px 'poppinsregular';
     letter-spacing: 0.4px;
     color: #000000;
     background-color: #FFFFFF;
@@ -61,19 +69,11 @@ header li:first-of-type{
     margin-right: 56px;
 }
 header li:first-of-type a{
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 13px;
-    line-height: 20px;
+    font: 13px/20px 'poppinsregular';
     color: #FFFFFF;
 }
 header li a{
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 15px;
-    line-height: 20px;
+    font: 15px/20px 'poppinsregular';
     color: #FFFFFF;
 }
 .section_main{
@@ -82,6 +82,7 @@ header li a{
     height: 100vh;
     padding: 461px 0 41px 0;
     box-sizing: border-box;
+    position: relative;
 
 }
 .section_main__central_conteiner{
@@ -90,31 +91,39 @@ header li a{
     text-align: center;
 }
 .section_main__central_conteiner h2{
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 20px;
+    font: 14px/20px 'poppinsregular';
     letter-spacing: 2px;
     text-transform: uppercase;
     color: #C0C0C0;
     margin-bottom: 1px;
 }
 .section_main__central_conteiner h1{
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 54px;
-    line-height: 59px;
+    font: 54px/59px 'poppinsregular';
     color: #FFFFFF;
     margin-bottom: 18px;
 }
 .section_main__central_conteiner p{
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 20px;
+    font: 14px/20px 'poppinsregular';
     color: #C0C0C0;
 }
+.fixed_information li{
+    font: 12px/12px 'poppinsregular';
+    color: #FFFFFF;
+    list-style: none;
+    display: inline-flex;
+    margin-left: 16px;
 
+}
+.fixed_information{
+    position: absolute;
+    bottom: 41px;
+    right: 40px;
+}
+.fixed_information li:before{
+    content: "";
+    background-image: url("../images/shutter-icon-Light.svg");
+    width: 16px;
+    height: 16px;
+    display: block;
+    margin-right: 6px;
+}
