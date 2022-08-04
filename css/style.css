@@ -173,7 +173,7 @@ header li a{
     background-color: black;
     padding: 113px 0 108px;
     text-align: center;
-    transition: 0.2s;
+
 
 }
 .section_help h2{
@@ -194,6 +194,7 @@ header li a{
     margin: auto;
     display: flex;
     justify-content: space-between;
+    transition: 0.2s;
 }
 .section_help div:hover{
     transform: scale(1.15);
