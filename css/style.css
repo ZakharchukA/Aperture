@@ -179,6 +179,8 @@ header li a{
 .section_help h2{
     font: 40px/42px 'poppinsregular';
     color: #FFFFFF;
+    max-width: 571px;
+    margin: auto;
 }
 .section_help h3 {
     font: 24px/30px 'poppinsregular';
