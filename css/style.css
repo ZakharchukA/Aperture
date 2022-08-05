@@ -189,7 +189,7 @@ header li a{
 .section_help div{
     background: #FFFFFF;
     border-radius: 14px;
-    padding: 9px 0px 9px 0px;
+    padding: 8px 0px 8px 0px;
     max-width: 154px;
     margin: auto;
     display: flex;
@@ -200,10 +200,28 @@ header li a{
     transform: scale(1.15);
 }
 .section_help div a{
-    display: inline-block;
+    display: inline-flex;
     text-decoration: none;
     font: 16px/20px 'poppinsregular';
     color: #000000;
     margin: auto;
+    /*text-align-all: center;*/
+    align-items: center;
 }
+.section_help div a:before{
+    content: "";
+    width: 35px;
+    height: 35px;
+    background-image: url('../images/circle.svg');
+    /*background-repeat: no-repeat;*/
+    background-size: 35px 35px;
+    margin-right: 5px;
+    /*display: inline-block;*/
+    /*display: flex;*/
+    display: inline-flex;
+    align-items: center;
 
+    /*align-self: center;*/
+    /*text-align-all: center;*/
+
+}
