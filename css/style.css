@@ -155,11 +155,12 @@ header li a{
 .past_clients h2{
     font: 40px/42px 'poppinsregular';
     color: #FFFFFF;
+    margin-bottom: 15px;
 }
 .past_clients h3{
     font: 24px/30px 'poppinsregular';
     color: #C0C0C0;
-    margin-top: 15px;
+    margin-bottom: 82px;
 }
 .box_p_clients{
     max-width: 1076px;
@@ -167,7 +168,6 @@ header li a{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: 82px;
 }
 .section_help{
     background-color: black;
@@ -182,7 +182,7 @@ header li a{
     max-width: 571px;
     margin: auto;
 }
-.section_help h3 {
+.section_help h3{
     font: 24px/30px 'poppinsregular';
     color: #C0C0C0;
     margin-top: 15px;
