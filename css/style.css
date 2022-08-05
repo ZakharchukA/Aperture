@@ -161,7 +161,7 @@ header li a{
     color: #C0C0C0;
     margin-top: 15px;
 }
-.past_clients div{
+.box_p_clients{
     max-width: 1076px;
     margin: auto;
     display: flex;
@@ -188,7 +188,7 @@ header li a{
     margin-top: 15px;
     margin-bottom: 22px;
 }
-.section_help div{
+.button{
     background: #FFFFFF;
     border-radius: 14px;
     padding: 4px 0 4px 0;
@@ -198,10 +198,10 @@ header li a{
     justify-content: space-between;
     transition: 0.2s;
 }
-.section_help div:hover{
+.button:hover{
     transform: scale(1.15);
 }
-.section_help div a{
+.button a{
     display: inline-flex;
     text-decoration: none;
     font: 16px/20px 'poppinsregular';
@@ -209,14 +209,16 @@ header li a{
     margin: auto;
     align-items: center;
 }
-.section_help div a:before{
+.button a:before{
     content: "";
     width: 35px;
     height: 35px;
-    background-image: url('../images/circle.svg');
-    background-size: 35px 35px;
+    /*background-image: url('../images/circle.svg');*/
+    background-color: black;
+    border-radius: 40%;
+    /*background-size: 35px 35px;*/
     margin-right: 9px;
-    display: inline-flex;
+    /*display: inline-flex;*/
     align-items: center;
 
 
