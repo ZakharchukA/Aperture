@@ -189,7 +189,7 @@ header li a{
 .section_help div{
     background: #FFFFFF;
     border-radius: 14px;
-    padding: 9px 0 9px 0;
+    padding: 4px 0 4px 0;
     max-width: 154px;
     margin: auto;
     display: flex;
@@ -213,7 +213,7 @@ header li a{
     height: 35px;
     background-image: url('../images/circle.svg');
     background-size: 35px 35px;
-    margin-right: 5px;
+    margin-right: 9px;
     display: inline-flex;
     align-items: center;
 
