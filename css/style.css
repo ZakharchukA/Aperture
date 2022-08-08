@@ -42,14 +42,14 @@ header li{
 header li:hover{
     transform: scale(1.15);
 }
-header ul li a:hover{
+header ul li:hover a{
     color: #af9595;
 }
 header li:last-of-type{
     background: #FFFFFF;
     border-radius: 14px;
     margin-right: 20px;
-    padding: 9px 20px 13px 20px;
+    padding: 10px 20px 10px 20px;
 }
 header li:last-of-type a{
     font: 16px/20px 'poppinsregular';
@@ -74,15 +74,17 @@ header li a{
     background-image: url("../images/background_main.jpg");
     background-size: cover;
     height: 100vh;
-    padding: 466px 0 71px 0;
+    padding-bottom: 71px;
     box-sizing: border-box;
     position: relative;
     background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
 
 }
 .section_main__central_conteiner{
     max-width: 600px;
-    margin: auto;
     text-align: center;
 
 }
@@ -173,8 +175,6 @@ header li a{
     background-color: black;
     padding: 113px 0 108px;
     text-align: center;
-
-
 }
 .section_help h2{
     font: 40px/42px 'poppinsregular';
