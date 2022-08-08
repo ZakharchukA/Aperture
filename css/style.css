@@ -73,6 +73,7 @@ header li a{
 .section_main{
     background-image: url("../images/background_main.jpg");
     background-size: cover;
+    background-position: center;
     height: 100vh;
     padding-bottom: 71px;
     box-sizing: border-box;
