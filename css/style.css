@@ -149,6 +149,73 @@ header li a{
         display: block;
         margin-right: 5px;
 }
+.what_we_do{
+    padding-top: 112px;
+    padding-bottom: 100px;
+    background-color: #000000;
+}
+.what_we_do .container{
+    max-width: 1168px;
+    margin: auto;
+
+}
+.what_we_do h2{
+    font: 40px/42px 'poppinsregular';
+    color: #FFFFFF;
+    text-align: center;
+    margin-bottom: 15px;
+}
+.what_we_do h3{
+    font: 23px/30px 'poppinsregular';
+    color: #C0C0C0;
+    text-align: center;
+    margin-bottom: 42px;
+}
+.d-flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+.what_we_do .preview{
+    position: relative;
+    max-width: 576px;
+    max-height: 600px;
+    overflow: hidden;
+    transition: 0.2s;
+
+
+}
+/*.what_we_do .preview:hover{*/
+/*    transform: scale(1.02);*/
+/*}*/
+
+.what_we_do .preview img{
+    display: block;
+    width: 100%;
+}
+.what_we_do .preview .description{
+    position: absolute;
+    padding: 30px;
+    bottom: 0;
+    width: 100%;
+    box-sizing: border-box;
+
+}
+.preview .description h4{
+    font: 14px/20px 'poppinsregular';
+    color: #FFFFFF;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+.preview .description p{
+    font: 14px/20px 'poppinsregular';
+    color: #C0C0C0;
+    margin-bottom: 22px;
+}
+
 .past_clients{
     background-color: black;
     padding: 113px 0 140px;
@@ -191,15 +258,13 @@ header li a{
 .button{
     background: #FFFFFF;
     border-radius: 14px;
-    padding: 4px 0 4px 0;
-    max-width: 154px;
-    margin: auto;
-    display: flex;
+    padding: 5px 11px 5px 4px;
+    display: inline-flex;
     justify-content: space-between;
     transition: 0.2s;
 }
 .button:hover{
-    transform: scale(1.15);
+    transform: scale(1.05);
 }
 .button a{
     display: inline-flex;
@@ -215,7 +280,7 @@ header li a{
     height: 35px;
     background-color: black;
     border-radius: 40%;
-    margin-right: 9px;
+    margin-right: 7px;
     align-items: center;
     /*background-size: 35px 35px;*/
     /*background-image: url('../images/circle.svg');*/
@@ -225,7 +290,7 @@ header li a{
 
 .photo_container{
     position: relative;
-    padding-right: 60px;
+    /*padding-right: 60px;*/
     /*padding-left: 60px;*/
     display: flex;
     justify-content: flex-end;
@@ -249,6 +314,7 @@ header li a{
 }
 .content_container{
     max-width: 298px;
+    margin-right: 60px;
 }
 .content_container h3{
     font: 14px/20px 'poppinsregular';
