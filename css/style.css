@@ -37,13 +37,13 @@ header ul{
 }
 header li{
     margin-right: 32px;
-    transition: 0.2s;
+    transition: 0.7s;
 }
 header li:hover{
-    transform: scale(1.15);
+    transform: scale(1.05);
 }
 header ul li:hover a{
-    color: #af9595;
+    color: #C4BAB0FF;
 }
 header li:last-of-type{
     background: #FFFFFF;
@@ -183,17 +183,19 @@ header li a{
     max-width: 576px;
     max-height: 600px;
     overflow: hidden;
-    transition: 0.2s;
-
+    transition: 0.7s;
 
 }
-/*.what_we_do .preview:hover{*/
-/*    transform: scale(1.02);*/
-/*}*/
+.what_we_do .preview:hover{
+    transform: scale(1.02);
+    background-color: black;
+}
 
 .what_we_do .preview img{
     display: block;
     width: 100%;
+    border: solid;
+
 }
 .what_we_do .preview .description{
     position: absolute;
@@ -261,10 +263,11 @@ header li a{
     padding: 5px 11px 5px 4px;
     display: inline-flex;
     justify-content: space-between;
-    transition: 0.2s;
+    transition: 0.7s;
 }
 .button:hover{
     transform: scale(1.05);
+
 }
 .button a{
     display: inline-flex;
@@ -298,6 +301,7 @@ header li a{
     background-position: center;
     min-height: 600px;
     align-items: center;
+    /*height: 75vh;*/
 
 }
 .fuji {
