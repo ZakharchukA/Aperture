@@ -448,3 +448,21 @@ footer form .button_submit{
         .social_items li:nth-child(2){
             margin-right: 26px;
 }
+.owl-stage{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.owl-nav .owl-prev{
+    position: absolute;
+    left: 0;
+    top: 41px;
+
+}
+.owl-nav .owl-prev:before{
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    content: "\f053";
+    color: #FFFFFF;
+    font-size: 30px;
+}
