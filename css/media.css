@@ -68,6 +68,20 @@
     header li:last-of-type  {
         display: none;
     }
+    .list_box {
+        display: block;
+        justify-content: left;
+    }
+    .list_box ul {
+        margin-bottom: 30px;
+        max-width: 150px;
+    }
+    .list_box ul li a{
+        font: 12px/16px 'poppinsregular';
+    }
+    .list_box ul li {
+        margin-bottom: 5px;
+    }
 }
 
 @media screen and (max-width: 414px) {
