@@ -21,6 +21,10 @@
         padding-right: 55px;
         padding-left: 55px;
     }
+    .what_we_do {
+        padding: 60px 15px 50px 15px;
+
+    }
 }
 
 @media screen and (max-width: 880px) {
