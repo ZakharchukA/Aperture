@@ -233,12 +233,20 @@ header li a{
     color: #C0C0C0;
     margin-bottom: 82px;
 }
+.past_clients a{
+    max-width: 128px;
+}
 .box_p_clients{
     max-width: 1076px;
     margin: auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+}
+.owl-stage-outer{
+    position: relative;
+
 }
 .section_help{
     background-color: black;
@@ -452,11 +460,13 @@ footer form .button_submit{
     display: flex;
     justify-content: space-between;
     align-items: center;
+
 }
 .owl-nav .owl-prev{
     position: absolute;
-    left: 0;
-    top: 41px;
+    left: -10px;
+    top: calc(50% - 15px);
+
 
 }
 .owl-nav .owl-prev:before{
@@ -465,4 +475,21 @@ footer form .button_submit{
     content: "\f053";
     color: #FFFFFF;
     font-size: 30px;
+
+}
+.owl-nav .owl-next{
+    position: absolute;
+    right: -10px;
+    top: calc(50% - 15px);
+
+}
+.owl-nav .owl-next:before{
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    content: "\f054";
+    color: #FFFFFF;
+    font-size: 30px;
+}
+.owl-dots{
+    display: none;
 }
