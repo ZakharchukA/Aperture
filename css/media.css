@@ -72,12 +72,7 @@
     header li:last-of-type {
         display: inline-block;
     }
-    @media screen and (max-width: 616px) {
-        .past_clients{
-            padding-right: 55px;
-            padding-left: 55px;
-        }
-    }
+
 }
 @media screen and (max-width: 428px) {
     .section_main__central_conteiner p{
