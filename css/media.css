@@ -74,8 +74,8 @@
     }
     @media screen and (max-width: 616px) {
         .past_clients{
-            padding-right: 140px;
-            padding-left: 140px;
+            padding-right: 55px;
+            padding-left: 55px;
         }
     }
 }
@@ -141,6 +141,10 @@
         width: 12px;
         height: 12px;
         margin-right: 3px;
+    }
+    .past_clients{
+        padding-right: 25px;
+        padding-left: 25px;
     }
 }
 
