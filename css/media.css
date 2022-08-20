@@ -18,6 +18,18 @@
         padding-left: 50px;
         padding-right: 50px;
     }
+    .section_main{
+        background-attachment: scroll;
+    }
+    .fuji {
+        background-attachment: scroll;
+    }
+    .leafs {
+        background-attachment: scroll;
+    }
+    .himalayas {
+        background-attachment: scroll;
+    }
 
 }
 @media screen and (max-width: 1199px) {
@@ -118,17 +130,15 @@
         width: 219px;
 
     }
-}
-@media screen and (max-width: 448px) {
     .social_box {
         display: block;
         text-align: center;
     }
-    .social_box p{
-        margin-bottom: 10px;
-    }
     .social_items{
         justify-content: center;
+    }
+    .social_box p{
+        margin-bottom: 25px;
     }
 }
 @media screen and (max-width: 428px) {
