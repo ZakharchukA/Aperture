@@ -122,6 +122,9 @@
         padding-right: 15px;
         padding-left: 15px;
     }
+    .section_main{
+        background-image: url("../images/background_main_mob.jpg");
+    }
 
 
 }
