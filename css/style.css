@@ -494,3 +494,6 @@ footer form .button_submit{
 .owl-dots{
     display: none;
 }
+.ui-accordion .ui-accordion-content {
+    padding: 0;
+}

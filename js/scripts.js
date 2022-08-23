@@ -1,4 +1,7 @@
 $(document).ready(function(){
+    $( function() {
+        $( "#accordion" ).accordion();
+    } );
 
     $('.owl-carousel').owlCarousel({
         loop:true,
