@@ -8,6 +8,7 @@
     url('../fonts/poppins-regular-webfont.svg#poppinsregular') format('svg');
     font-weight: normal;
     font-style: normal;
+    font-display: swap;
 }
 ::-webkit-scrollbar {
     background: #181818;
@@ -29,9 +30,8 @@
 }
 body{
     background-color: #181818;
-
-
 }
+
 a{
     display: inline-block;
     text-decoration: none;
@@ -40,7 +40,7 @@ header{
     padding: 24px;
     background-color: #181818;
 }
-header div{
+.c_box{
     max-width: 1200px;
     margin: auto;
     display: flex;
@@ -205,13 +205,12 @@ header li a{
 }
 .what_we_do .preview:hover{
     transform: scale(1.02);
-    background-color: black;
+
 }
 
 .what_we_do .preview img{
     display: block;
     width: 100%;
-    border: solid;
 
 }
 .what_we_do .preview .description{
