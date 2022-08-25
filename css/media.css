@@ -109,6 +109,13 @@
     .tools{
         background: none;
     }
+    .tools .central_box p,h2{
+        color: #C0C0C0;
+    }
+    .central_box{
+        width: 100%;
+        margin: 0;
+    }
 
 }
 @media screen and (max-width: 680px) {
@@ -136,10 +143,12 @@
     .section_main{
         background-image: url("../images/background_main_mob.jpg");
     }
-    .central_box{
-        width: 100%;
-        margin: 0;
+
+    .tools{
+        padding-left: 45px;
+        padding-right: 25px;
     }
+
 
 
 }
@@ -236,6 +245,15 @@
     .past_clients{
         padding-right: 25px;
         padding-left: 25px;
+    }
+    .tools .central_box p {
+        font: 12px/16px 'poppinsregular';
+    }
+    .tools h3{
+        font: 12px/16px 'poppinsregular';
+    }
+    .tools h2 {
+        font: 24px/28px 'poppinsregular';
     }
 }
 

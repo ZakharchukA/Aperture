@@ -359,11 +359,9 @@ header li a{
     min-height: 540px;
     background-color: #000000;
     display: flex;
-    /*justify-content: center;*/
     align-items: center;
     position: relative;
     padding-left: 100px;
-    /*padding-right: 5%;*/
 }
 .central_box{
     max-width: 1440px;
