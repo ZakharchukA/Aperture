@@ -143,6 +143,21 @@
     .section_main{
         background-image: url("../images/background_main_mob.jpg");
     }
+    .fuji {
+        background-image: url('../images/bg-fuji.webp');
+    }
+    .leafs {
+        background-image: url('../images/bg-leafs.webp');
+
+    }
+    .himalayas {
+        background-image: url('../images/bg-himalayas.webp');
+
+    }
+    .tools .bg_tools {
+        background-image: url("../images/bg-sweden.webp");
+    }
+
 
     .tools{
         padding-left: 45px;
