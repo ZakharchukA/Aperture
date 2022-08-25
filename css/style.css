@@ -10,7 +10,7 @@
     font-style: normal;
 }
 ::-webkit-scrollbar {
-    background: none;
+    background: #181818;
     width: 8px;
 
 }
