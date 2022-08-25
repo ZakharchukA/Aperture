@@ -14,7 +14,7 @@
     header li:last-of-type {
         margin-right: 0px;
     }
-    footer {
+    footer,.tools {
         padding-left: 50px;
         padding-right: 50px;
     }
@@ -44,6 +44,10 @@
     .list_box {
         margin-left: 100px;
     }
+    .central_box{
+        margin-right: 20px;
+    }
+
 
 
 }
@@ -98,6 +102,13 @@
     header li:first-of-type {
         display: none;
     }
+    .tools .bg_tools{
+        width: 100%;
+        z-index: -1;
+    }
+    .tools{
+        background: none;
+    }
 
 }
 @media screen and (max-width: 680px) {
@@ -114,7 +125,7 @@
     .list_box {
         margin-left: 15px;
     }
-    footer{
+    footer,.tools{
         padding-left: 25px;
         padding-right: 25px;
     }
@@ -124,6 +135,10 @@
     }
     .section_main{
         background-image: url("../images/background_main_mob.jpg");
+    }
+    .central_box{
+        width: 100%;
+        margin: 0;
     }
 
 

@@ -13,10 +13,11 @@
     background: #181818;
     width: 8px;
 
+
 }
 ::-webkit-scrollbar-thumb {
     background: #5a5e5e;
-    border-radius: 5px;
+    border-radius: 3px;
 }
 
 *{
@@ -358,13 +359,50 @@ header li a{
     min-height: 540px;
     background-color: #000000;
     display: flex;
-    justify-content: center;
+    /*justify-content: center;*/
     align-items: center;
+    position: relative;
+    padding-left: 100px;
+    /*padding-right: 5%;*/
 }
 .central_box{
-    max-width: 1240px;
-    width: 100%;
+    max-width: 1440px;
+    width: calc(50% - 10px);
 }
+.tools h3{
+    font: 14px/20px 'poppinsregular';
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #C0C0C0;
+    margin-bottom: 6px;
+    margin-top: 20px;
+}
+.tools h2{
+    font: 28px/32px 'poppinsregular';
+    color: #FFFFFF;
+    margin-bottom: 14px;
+    max-width: 514px;
+
+}
+.tools .central_box p{
+    font: 14px/20px 'poppinsregular';
+    color: #FFFFFF;
+    margin-bottom: 20px;
+    max-width: 514px;
+
+
+}
+.tools .bg_tools {
+    position: absolute;
+    right: 0;
+    top: 0;
+    background-image: url("../images/bg-sweden.jpg");
+    height: 100%;
+    width: 50%;
+    background-size: cover;
+    background-position: center;
+}
+
 
 
 
