@@ -9,10 +9,25 @@
     font-weight: normal;
     font-style: normal;
 }
+::-webkit-scrollbar {
+    background: none;
+    width: 8px;
+
+}
+::-webkit-scrollbar-thumb {
+    background: #5a5e5e;
+    border-radius: 5px;
+}
 
 *{
     padding: 0;
     margin: 0;
+
+
+
+}
+body{
+    background-color: #181818;
 
 
 }
@@ -339,6 +354,20 @@ header li a{
     font: 14px/20px 'poppinsregular';
     color: #C0C0C0;
 }
+.tools{
+    min-height: 540px;
+    background-color: #000000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.central_box{
+    max-width: 1240px;
+    width: 100%;
+}
+
+
+
 footer{
     background-color: black;
     padding-top: 100px;
@@ -496,4 +525,5 @@ footer form .button_submit{
 }
 .ui-accordion .ui-accordion-content {
     padding: 0;
+
 }
