@@ -203,11 +203,61 @@ header li a{
     transition: 0.7s;
 
 }
+
 .what_we_do .preview:hover{
     transform: scale(1.02);
 
 }
+.ui-accordion .preview:hover{
+    transform: none;
 
+}
+
+.ui-corner-all, .ui-corner-bottom, .ui-corner-left, .ui-corner-bl, .ui-corner-right, .ui-corner-br {
+    border: none;
+    background: none;
+}
+.ui-widget-content {
+    border: none;
+}
+.ui-accordion .ui-accordion-content {
+    padding: 0;
+    border: none;
+    background-color: black;
+
+}
+.ui-state-active, .ui-widget-content .ui-state-active, .ui-widget-header .ui-state-active, a.ui-button:active, .ui-button:active, .ui-button.ui-state-active:hover {
+    border: 0;
+    background: none;
+    font-weight: normal;
+    color: #ffffff;
+}
+:focus-visible {
+    outline: none;
+}
+.ui-accordion .ui-accordion-header {
+    margin-bottom: 30px;
+    padding: 0;
+}
+.ui-accordion .d-flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+.ui-icon, .ui-widget-content .ui-icon {
+    background-image: none;
+
+}
+.ui-icon {
+    display: none;
+    vertical-align: inherit;
+    margin-top: 0;
+    position: relative;
+    text-indent: 0;
+    overflow: inherit;
+}
 .what_we_do .preview img{
     display: block;
     width: 100%;
