@@ -182,12 +182,25 @@ header li a{
     text-align: center;
     margin-bottom: 15px;
 }
-.what_we_do h3{
+.what_we_do h5{
     font: 23px/30px 'poppinsregular';
     color: #C0C0C0;
     text-align: center;
     margin-bottom: 42px;
 }
+.what_we_do div h3{
+    font: 23px/30px 'poppinsregular';
+    color: #C0C0C0;
+    text-align: center;
+    margin-bottom: 42px;
+    max-width: 320px;
+
+
+}
+.ui-accordion .ui-accordion-header {
+    margin: auto;
+}
+
 .d-flex{
     display: flex;
     justify-content: center;
@@ -228,16 +241,30 @@ header li a{
 }
 .ui-state-active, .ui-widget-content .ui-state-active, .ui-widget-header .ui-state-active, a.ui-button:active, .ui-button:active, .ui-button.ui-state-active:hover {
     border: 0;
-    background: none;
+    /*background: none;*/
     font-weight: normal;
     color: #ffffff;
 }
 :focus-visible {
     outline: none;
 }
+.state-default, .ui-button, html .ui-button.ui-state-disabled:hover, html .ui-button.ui-state-disabled:active {
+    border: none;
+    background: none;
+}
+.ui-state-hover, .ui-widget-content .ui-state-hover, .ui-widget-header-ui-state:hover, .ui-state-focus, .ui-widget-content.ui-state-focus, .ui-widget-header .ui-state-focus,.ui-button:hover, .ui-button:focus{
+    border: none;
+    background: none;
+
+}
+.ui-state-active, .ui-widget-content .ui-state-active, .ui-widget-header .ui-state-active, a.ui-button:active, .ui-button:active, .ui-button.ui-state-active:hover {
+    border-radius: 9px;
+    background: #181a1a;
+}
+
 .ui-accordion .ui-accordion-header {
     margin-bottom: 30px;
-    padding: 0;
+    padding: 5;
 }
 .ui-accordion .d-flex{
     display: flex;
@@ -258,6 +285,7 @@ header li a{
     text-indent: 0;
     overflow: inherit;
 }
+
 .what_we_do .preview img{
     display: block;
     width: 100%;
@@ -331,7 +359,7 @@ header li a{
     margin-top: 15px;
     margin-bottom: 22px;
 }
-.button{
+.button, .what_we_do div h3{
     background: #FFFFFF;
     border-radius: 14px;
     padding: 5px 11px 5px 4px;
@@ -339,11 +367,11 @@ header li a{
     justify-content: space-between;
     transition: 0.7s;
 }
-.button:hover{
-    transform: scale(1.05);
+.button:hover, .what_we_do div h3:hover{
+    transform: scale(1.02);
 
 }
-.button a{
+.button a, .what_we_do div h3{
     display: inline-flex;
     text-decoration: none;
     font: 16px/20px 'poppinsregular';
@@ -362,6 +390,22 @@ header li a{
 
 
 }
+.what_we_do div h3:after{
+    content: "";
+    width: 55px;
+    height: 35px;
+    background-color: black;
+    border-radius: 10px;
+    display: inline-block;
+    margin-top: 5px;
+}
+/*#ui-id-1{*/
+/*    display: flex;*/
+/*    justify-content: space-between;*/
+/*    align-items: center;*/
+/*}*/
+
+
 
 .photo_container{
     position: relative;
@@ -409,10 +453,13 @@ header li a{
     align-items: center;
     position: relative;
     padding-left: 100px;
+    /*justify-content: center;*/
+
 }
 .central_box{
     max-width: 1440px;
-    width: calc(50% - 10px);
+    width: 100%;
+    margin: auto;
 }
 .tools h3{
     font: 14px/20px 'poppinsregular';
