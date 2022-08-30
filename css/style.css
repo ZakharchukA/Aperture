@@ -664,7 +664,7 @@ footer form .button_submit{
 body {
     /*position: relative;*/
     width: 100%;
-    overflow-x: hidden;
+    overflow-x: hidden !important;
     z-index: 1;
 }
 body::after {
