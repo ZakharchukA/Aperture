@@ -30,7 +30,7 @@
 }
 body{
     background-color: #181818;
-    overflow-x: hidden;
+
 }
 
 a{
@@ -665,7 +665,8 @@ body {
     /*position: relative;*/
     width: 100%;
     overflow-x: hidden;
-    z-index: 1; }
+    z-index: 1;
+}
 body::after {
     content: "";
     position: absolute;
