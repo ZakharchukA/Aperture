@@ -121,6 +121,9 @@
         max-width: calc(576px - 30%);
         max-height: calc(600px - 30%);
     }
+    .ui-accordion .ui-accordion-content {
+        overflow: inherit;
+    }
 
 }
 
@@ -369,6 +372,7 @@
 @media screen and (min-width: 780px) {
     body {
         width: inherit;
+        overflow-x: hidden;
         z-index: 0; }
 
     nav{

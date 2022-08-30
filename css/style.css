@@ -683,7 +683,7 @@ nav {
     right: 0;
     top: 85px;
     width: 50%;
-    height: 100vh;
+    height: 100%;
     display: flex;
     align-items: start;
     background: rgba(0, 0, 0, 0.45);
