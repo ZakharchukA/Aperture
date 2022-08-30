@@ -205,6 +205,8 @@
     nav{
         width: 100%;
     }
+
+
 }
 @media screen and (max-width: 428px) {
     .section_main__central_conteiner p{
@@ -367,7 +369,7 @@
 @media screen and (min-width: 780px) {
     body {
         width: inherit;
-        overflow-x: inherit;
+        overflow-x: hidden;
         z-index: 0; }
 
     nav{
