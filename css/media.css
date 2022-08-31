@@ -146,6 +146,15 @@
     nav{
         width: 100%;
     }
+    nav .menu-btn {
+        left: -60px;
+    }
+    nav.nav-open .menu-btn {
+        left: calc(90% - 20px);
+
+    }
+
+
     .section_main{
         padding-right: 15px;
         padding-left: 15px;
@@ -371,7 +380,7 @@
     }
 }
 
-@media screen and (min-width: 780px) {
+@media screen and (min-width: 880px) {
     body {
         width: inherit;
         /*overflow-x: hidden;*/
