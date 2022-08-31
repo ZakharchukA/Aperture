@@ -9,12 +9,10 @@ header{
   box-sizing: border-box;
   position: fixed;
   z-index: 20;
-  top: 0;
+  //top: 82px;
   transition: top 550ms cubic-bezier(0.8, 0, 0.33, 1);
 }
-.nav-up {
-  top: -82px;
-}
+
 .nav-up nav{
   top: -82px;
 
@@ -24,11 +22,15 @@ header{
   top: 82px;
 
 }
-header, .nav-up nav.nav-open{
+.nav-up {
+  top: -82px;
+}
+header, header.nav-up nav.nav-open{
   top: 0;
 
 
 }
+
 
 header ul{
   list-style: none;
