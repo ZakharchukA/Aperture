@@ -117,7 +117,7 @@ function removeSubmenu() {
 }
 
 
-    //script about hide header
+    //script about hide/ header
 var didScroll;
 var lastScrollTop = 0;
 var delta = 5;
