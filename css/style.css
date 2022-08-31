@@ -30,7 +30,6 @@
 }
 body{
     background-color: #181818;
-    padding-top: 82px;
 
 }
 
@@ -805,9 +804,6 @@ nav.sub-menu-open .nav-links li {
 nav.sub-menu-open .nav-links .hover-el {
     opacity: 0; }
 
-.nav-up{
-    top: -82px;
-}
 
 
 
