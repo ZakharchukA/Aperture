@@ -71,7 +71,7 @@
 
 @media screen and (max-width: 880px) {
     header{
-        padding: 24px;
+        padding: 24px 25px;
     }
     header li:first-of-type {
         margin-right: 20px;
@@ -143,6 +143,9 @@
     /*header li:last-of-type {*/
     /*    display: inline-block;*/
     /*}*/
+    nav{
+        width: 100%;
+    }
     .section_main{
         padding-right: 15px;
         padding-left: 15px;
@@ -218,9 +221,7 @@
         padding: 60px 10px 50px 10px;
 
     }
-    nav{
-        width: 100%;
-    }
+
 
 
 
