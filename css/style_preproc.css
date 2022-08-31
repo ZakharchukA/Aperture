@@ -1,0 +1,58 @@
+header {
+  padding: 24px;
+  background-color: #181818;
+  width: 100%;
+  position: fixed;
+  z-index: 20;
+}
+
+header ul {
+  list-style: none;
+  align-items: center;
+}
+
+header li {
+  margin-right: 32px;
+  transition: 0.7s;
+}
+
+header li:hover {
+  transform: scale(1.05);
+}
+
+header ul li:hover a {
+  color: #C4BAB0;
+}
+
+header li:last-of-type {
+  background: #FFFFFF;
+  border-radius: 14px;
+  margin-right: 20px;
+  padding: 10px 20px 10px 20px;
+}
+
+header li:last-of-type a {
+  font: 16px/20px "poppinsregular";
+  letter-spacing: 0.4px;
+  color: #000000;
+  background-color: #FFFFFF;
+}
+
+header li:nth-child(4) {
+  margin-right: 31px;
+}
+
+header li:first-of-type {
+  margin-right: 56px;
+}
+
+header li:first-of-type a {
+  font: 13px/20px "poppinsregular";
+}
+
+header li a {
+  font: 15px/20px "poppinsregular";
+  color: #FFFFFF;
+}
+
+/*# sourceMappingURL=style_preproc.css.map */
