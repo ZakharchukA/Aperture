@@ -6,8 +6,11 @@ header{
   padding: 24px;
   background-color: #181818;
   width: 100%;
-  position: fixed;
-  z-index: 20;
+  box-sizing: border-box;
+  //position: fixed;
+  //top: 0;
+  //z-index: 20;
+  //transition: top 0.2s ease-in-out;
 }
 header ul{
   list-style: none;

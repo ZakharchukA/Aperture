@@ -2,8 +2,7 @@ header {
   padding: 24px;
   background-color: #181818;
   width: 100%;
-  position: fixed;
-  z-index: 20;
+  box-sizing: border-box;
 }
 
 header ul {

@@ -71,7 +71,7 @@
 
 @media screen and (max-width: 880px) {
     header{
-        padding: 24px;
+        padding: 24px 25px;
     }
     header li:first-of-type {
         margin-right: 20px;
