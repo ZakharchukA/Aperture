@@ -409,7 +409,8 @@
     nav .nav-links li {
         opacity: 1;
         transform: translateX(0%);
-        transition: none;
+        transition: 0.7s;
+        transition-delay: inherit;
         width: auto;
         display: block;
 
@@ -418,7 +419,6 @@
     nav .nav-links {
         --link-height: auto;
         position: relative;
-        /*width: inherit;*/
         display: flex;
         text-align: center;
         justify-content: space-between;
