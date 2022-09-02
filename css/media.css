@@ -1,196 +1,20 @@
-@media screen and (max-width: 1320px) {
-    /*header{*/
-    /*    padding: 24px 60px;*/
-    /*}*/
-    /*header li:first-of-type {*/
-    /*    margin-right: 25px;*/
-    /*}*/
-    /*header li {*/
-    /*    margin-right: 20px;*/
-    /*}*/
-    /*header li:nth-child(4) {*/
-    /*    margin-right: 20px;*/
-    /*}*/
-    /*header li:last-of-type {*/
-    /*    margin-right: 0px;*/
-    /*}*/
-    footer,.tools {
-        padding-left: 50px;
-        padding-right: 50px;
-    }
-    .section_main{
-        background-attachment: scroll;
-    }
-    .fuji {
-        background-attachment: scroll;
-    }
-    .leafs {
-        background-attachment: scroll;
-    }
-    .himalayas {
-        background-attachment: scroll;
-    }
 
-}
-@media screen and (max-width: 1199px) {
-    .past_clients{
-        padding-right: 55px;
-        padding-left: 55px;
-    }
-    .what_we_do {
-        padding: 60px 15px 50px 15px;
-
-    }
-    .list_box {
-        margin-left: 100px;
-    }
-    .central_box{
-        margin: inherit;
-        width: calc(50% - 20px);
-
-    }
-    .d-flex{
-        gap: 10px;
-    }
-    .what_we_do .preview {
-        max-width: calc(576px - 15%);
-        max-height: calc(600px - 15%);
-    }
-
-
-
-}
-@media screen and (max-width: 925px) {
-
-    .what_we_do .preview {
-        max-width: calc(576px - 25%);
-        max-height: calc(600px - 25%);
-    }
-
-}
-
-@media screen and (max-width: 880px) {
-    header{
-        padding: 24px 25px;
-    }
-    header li:first-of-type {
-        margin-right: 20px;
-    }
-    header li {
-        margin-right: 20px;
-    }
-    header li:nth-child(4) {
-        margin-right: 20px;
-    }
-    header li:last-of-type {
-        margin-right: 0px;
-        padding: 10px 10px 10px 10px;
-    }
-    .section_main {
-        height: 90vh;
-    }
-    .list_box {
-        display: block;
-        justify-content: left;
-        margin-left: 100px;
-    }
-    .list_box ul {
-        margin-bottom: 30px;
-
-    }
-
-}
-
-
-@media screen and (max-width: 834px) {
-    .subscribe_box{
-        display: block;
-    }
-    .subscribe_box p {
-        margin-bottom: 20px;
-    }
-    .subscribe_box h3{
-        margin-bottom: 10px;
-    }
-
-
-}
-@media screen and (max-width: 804px) {
-
-    .what_we_do .preview {
-        max-width: calc(576px - 30%);
-        max-height: calc(600px - 30%);
-    }
-    .ui-accordion .ui-accordion-content {
-        overflow: inherit;
-    }
-
-}
-
-
-@media screen and (max-width: 768px) {
-
-    .what_we_do .preview {
-        max-width: 576px;
-        max-height: 600px;
-    }
-
-}
 @media screen and (max-width: 680px) {
-    /*header li {*/
-    /*    !*display: none;*!*/
-    /*}*/
-    /*header li:last-of-type {*/
-    /*    display: inline-block;*/
-    /*}*/
-    nav{
-        width: 100%;
-    }
-    nav .menu-btn {
-        left: -60px;
-    }
-    nav.nav-open .menu-btn {
-        left: calc(90% - 20px);
 
-    }
+
 
 
     .section_main{
-        padding-right: 15px;
-        padding-left: 15px;
-    }
-
-    .section_main__central_conteiner p{
-        margin-right: 15px;
-        margin-left: 15px;
-    }
-    .list_box {
-        margin-left: 15px;
-    }
-    footer,.tools{
-        padding-left: 25px;
-        padding-right: 25px;
-    }
-    .section_help{
-        padding-right: 15px;
-        padding-left: 15px;
-    }
-    .section_main{
-        background-image: url("../images/background_main_mob.jpg");
     }
     .fuji {
-        background-image: url('../images/bg-fuji.webp');
     }
     .leafs {
-        background-image: url('../images/bg-leafs.webp');
 
     }
     .himalayas {
-        background-image: url('../images/bg-himalayas.webp');
 
     }
     .tools .bg_tools {
-        background-image: url("../images/bg-sweden.webp");
     }
 
 
@@ -232,14 +56,6 @@
     }
 
 
-
-
-    /*header li:last-of-type {*/
-    /*    display: none;*/
-    /*}*/
-    /*header .c_box{*/
-    /*    justify-content: center;*/
-    /*}*/
     .list_box {
         display: block;
         justify-content: left;

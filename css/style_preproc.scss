@@ -1,6 +1,26 @@
+@import url(https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css);
+@import url(https://resources/demos/style.css);
+@import "owl.carousel.css";
+@import "owl.theme.default.css";
+@import "mixin";
+
 $main_font:'poppinsregular';
-$main_color:#000000;
-$white_color:#FFFFFF;
+$f_color1:#000000;
+$f_color2:#FFFFFF;
+$f_color3:#C0C0C0;
+
+$bg_color1:#000000;
+$bg_color2:#FFFFFF;
+$bg_color3:#181818;
+
+$hov_color1: #C4BAB0;
+$hov_color2: #FFFFFF;
+$hov_bg_color1: rgba(0, 0, 0, 0.25);
+$hov_bg_color2: #181A1A;
+$hov_bg_color3: rgba(0, 0, 0, 0.45);
+$hov_bg_color4: rgba(0, 0, 0, 0.15);
+
+
 
 @font-face {
   font-family: 'poppinsregular';
@@ -15,7 +35,7 @@ $white_color:#FFFFFF;
   font-display: swap;
 }
 ::-webkit-scrollbar {
-  background: #181818;
+  background: $bg_color3;
   width: 8px;
 
 
@@ -32,7 +52,7 @@ $white_color:#FFFFFF;
 }
 
 body{
-  background-color: #181818;
+  background-color: $bg_color3;
   width: 100%;
   z-index: 1;
 }
@@ -46,50 +66,63 @@ a{
 
 header{
   padding: 24px 25px;
-  background-color: #181818;
+  background-color: $bg_color3;
   width: 100%;
   box-sizing: border-box;
   position: fixed;
   top: 0;
   z-index: 20;
-  transition: top 550ms cubic-bezier(0.8, 0, 0.33, 1);
+  @include transition(top 550ms cubic-bezier(0.8, 0, 0.33, 1));
+
   ul{
     list-style: none;
     align-items: center;
     li{
       margin-right: 32px;
-      transition: 0.7s;
-
+      @include transition(0.7s);
+      @include max-screen (880px) {
+        margin-right: 20px;
+      }
       &:first-of-type{
         margin-right: 56px;
+        @include max-screen (880px) {
+          margin-right: 20px;
+        }
         a{
-          font: 13px/20px 'poppinsregular';
+          font: 13px/20px $main_font;
         }
       }
       &:nth-child(4){
         margin-right: 31px;
+        @include max-screen (880px) {
+          margin-right: 20px;
+        }
       }
       &:last-of-type{
-        background: $white_color;
+        background: $bg_color2;
         border-radius: 14px;
         margin-right: 20px;
         padding: 10px 20px 10px 20px;
+        @include max-screen (880px) {
+          margin-right: 0px;
+          padding: 10px 10px 10px 10px;
+        }
         a{
-          font: 16px/20px 'poppinsregular';
+          font: 16px/20px $main_font;
           letter-spacing: 0.4px;
-          color: #000000;
-          background-color: #FFFFFF;
+          color: $f_color1;
+          background-color: $bg_color2;
         }
       }
       &:hover{
-        transform: scale(1.05);
+        @include transform(scale(1.05));
         a{
-          color: #C4BAB0;
+          color: $hov_color1;
         }
       }
       a{
-        font: 15px/20px 'poppinsregular';
-        color: #FFFFFF;
+        font: 15px/20px $main_font;
+        color: $f_color2;
       }
     }
   }
@@ -124,20 +157,23 @@ nav {
   height: 100%;
   display: flex;
   align-items: start;
-  background: rgba(0, 0, 0, 0.45);
+  background: $hov_bg_color3;
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
-  transform: translateX(100%);
-  transition: 550ms cubic-bezier(0.8, 0, 0.33, 1);
+  @include transform(translateX(100%));
+  @include transition(550ms cubic-bezier(0.8, 0, 0.33, 1));
   z-index: 4;
   padding-top: 20px;
+  @include max-screen (680px) {
+    width: 100%;
+  }
   a {
     text-transform: uppercase;
     font-size: 1.4rem;
     font-weight: 900;
     letter-spacing: 3px;
     user-select: auto;
-    color: #fff;
+    color: $f_color2;
   }
   .nav-links {
     --link-height: 60px;
@@ -152,14 +188,14 @@ nav {
       height: var(--link-height);
       list-style: none;
       opacity: 0;
-      transform: translateX(50%);
-      transition: all var(--transition-time) cubic-bezier(0.8, 0, 0.33, 0.9);
+      @include transform(translateX(50%));
+      @include transition(all var(--transition-time) cubic-bezier(0.8, 0, 0.33, 0.9));
       transition-delay: calc(30ms + var(--delay));
       cursor: pointer;
       box-sizing: border-box;
       z-index: 8;
       &:hover {
-        color: rgba(255, 255, 255, 0.85);
+        color: $hov_color2;
       }
       a {
         pointer-events: none;
@@ -172,8 +208,8 @@ nav {
       top: var(--y);
       left: var(--x);
       opacity: 0;
-      background: radial-gradient(circle at var(--mousex) var(--mousey), rgba(0, 0, 0, 0.15) 0%, rgba(0, 0, 0, 0.45) 100%);
-      transition: all 200ms cubic-bezier(0.215, 0.61, 0.355, 1);
+      background: radial-gradient(circle at var(--mousex) var(--mousey), $hov_bg_color4 0%, $hov_bg_color3 100%);
+      @include transition(all 200ms cubic-bezier(0.215, 0.61, 0.355, 1));
       pointer-events: none;
       z-index: 5;
     }
@@ -184,7 +220,7 @@ nav {
     top: 50%;
     left: 0;
     width: 100%;
-    transform: translateY(50%);
+    @include transform(translateY(50%));
     ol {
       list-style: none;
       li {
@@ -192,11 +228,11 @@ nav {
         justify-content: center;
         align-items: center;
         height: var(--link-height);
-        transition: all var(--transition-time) ease;
+        @include transition(all var(--transition-time) ease);
         transition-delay: calc(30ms + var(--delay));
         cursor: pointer;
         &:hover {
-          background: rgba(0, 0, 0, 0.25);
+          background: $hov_bg_color1;
         }
         a {
           font-size: 1.2rem;
@@ -205,11 +241,11 @@ nav {
       }
       li.off-menu {
         opacity: 0;
-        transform: translateY(30%);
+        @include transform(translateY(30%));
       }
       li.on-menu {
         opacity: 1;
-        transform: translateY(0%); }
+        @include transform(translateY(0%)); }
     }
   }
   .sub-menu-btn {
@@ -219,11 +255,11 @@ nav {
     left: calc(80% + 6px);
     width: var(--icon-width);
     height: var(--icon-width);
-    background: rgba(0, 0, 0, 0.25);
+    background: $hov_bg_color1;
     border-radius: 5px;
     opacity: 0;
-    transform: translateX(-100%);
-    transition: all var(--transition-time) cubic-bezier(0.8, 0, 0.33, 1);
+    @include transform(translateX(-100%));
+    @include transition(all var(--transition-time) cubic-bezier(0.8, 0, 0.33, 1));
     cursor: pointer;
     z-index: 8;
     pointer-events: none;
@@ -237,11 +273,11 @@ nav {
     }
     .line__1 {
       transform-origin: left;
-      transform: rotate(-35deg) translate(-1px, 8px);
+      @include transform(rotate(-35deg) translate(-1px, 8px));
     }
     .line__2 {
       transform-origin: left;
-      transform: rotate(35deg) translate(-1px, -8px);
+      @include transform(rotate(35deg) translate(-1px, -8px));
     }
 
   }
@@ -256,15 +292,18 @@ nav {
     width: calc(var(--icon-width) + 25px);
     height: calc(var(--icon-width) + 25px);
     flex-direction: column;
-    transition: all calc(100ms + var(--transition-time)) cubic-bezier(0.86, 0.02, 0.45, 0.99);
+    @include transition(all calc(100ms + var(--transition-time)) cubic-bezier(0.86, 0.02, 0.45, 0.99));
     cursor: pointer;
     z-index: 10;
+    @include max-screen (680px) {
+      left: -60px;
+    }
     .line {
       width: var(--icon-width);
       background: #fff;
       height: 2px;
       margin: 3px 0;
-      transition: all calc(var(--transition-time) + 100ms) cubic-bezier(0.9, 0, 0.33, 1);
+      @include transition(all calc(var(--transition-time) + 100ms) cubic-bezier(0.9, 0, 0.33, 1));
     }
     .line__1 {
       width: var(--icon-width);
@@ -281,33 +320,36 @@ nav {
 
   }
   .menu-btn.close .line__1 {
-    transform: rotate(45deg) translate(2px, -3px);
+    @include transform(rotate(45deg) translate(2px, -3px));
   }
   .menu-btn.close .line__2 {
-    transform: rotate(-45deg);
+    @include transform(rotate(-45deg));
   }
   .menu-btn.close .line__3 {
-    transform: rotate(45deg) translate(-2px, 3px);
+    @include transform(rotate(45deg) translate(-2px, 3px));
   }
 }
 nav.nav-open {
-  transform: translateX(0%);
+  @include transform(translateX(0%));
   .menu-btn {
     left: 80%;
+    @include max-screen (680px) {
+      left: calc(90% - 20px);
+    }
   }
   .nav-links li {
-    transform: translateX(0);
+    @include transform(translateX(0));
     opacity: 1;
   }
 }
 nav.sub-menu-open .sub-menu-btn {
   opacity: 1;
-  transform: translateX(0);
+  @include transform(translateX(0));
   pointer-events: all; }
 nav.sub-menu-open .nav-links li {
   pointer-events: none;
   opacity: 0;
-  transform: translateY(-10%); }
+  @include transform(translateY(-10%)); }
 nav.sub-menu-open .nav-links .hover-el {
   opacity: 0; }
 .section_main{
@@ -322,25 +364,41 @@ nav.sub-menu-open .nav-links .hover-el {
   justify-content: center;
   align-items: flex-end;
   position: relative;
+  @include max-screen(1320px){
+    background-attachment: scroll;
+  }
+  @include max-screen (880px) {
+    height: 90vh;
+  }
+  @include max-screen (680px) {
+    padding-right: 15px;
+    padding-left: 15px;
+    background-image: url("../images/background_main_mob.jpg");
+
+  }
 }
 .section_main__central_conteiner{
   max-width: 600px;
   text-align: center;
   h3{
-    font: 14px/20px 'poppinsregular';
+    font: 14px/20px $main_font;
     letter-spacing: 2px;
     text-transform: uppercase;
-    color: #C0C0C0;
+    color: $f_color3;
     margin-bottom: 1px;
   }
   h1{
-    font: 54px/59px 'poppinsregular';
-    color: #FFFFFF;
+    font: 54px/59px $main_font;
+    color: $f_color2;
     margin-bottom: 18px;
   }
   p{
-    font: 14px/20px 'poppinsregular';
-    color: #C0C0C0;
+    font: 14px/20px $main_font;
+    color: $f_color3;
+    @include max-screen (680px) {
+      margin-right: 15px;
+      margin-left: 15px;
+    }
   }
 }
 .fixed_information{
@@ -349,8 +407,8 @@ nav.sub-menu-open .nav-links .hover-el {
   right: 40px;
   list-style: none;
   li {
-    font: 12px/12px 'poppinsregular';
-    color: #FFFFFF;
+    font: 12px/12px $main_font;
+    color: $f_color2;
     display: inline-flex;
     margin-left: 16px;
     &:before{
@@ -397,16 +455,19 @@ nav.sub-menu-open .nav-links .hover-el {
 .what_we_do{
   padding-top: 112px;
   padding-bottom: 100px;
-  background-color: #000000;
+  background-color: $bg_color1;
+  @include max-screen(1199px){
+    padding: 60px 15px 50px 15px;
+  }
   h2{
-    font: 40px/42px 'poppinsregular';
-    color: #FFFFFF;
+    font: 40px/42px $main_font;
+    color: $f_color2;
     text-align: center;
     margin-bottom: 15px;
   }
   h5{
-    font: 23px/30px 'poppinsregular';
-    color: #C0C0C0;
+    font: 23px/30px $main_font;
+    color: $f_color3;
     text-align: center;
     margin-bottom: 42px;
   }
@@ -417,15 +478,15 @@ nav.sub-menu-open .nav-links .hover-el {
     max-width: 320px;
     display: inline-flex;
     text-decoration: none;
-    font: 16px/20px 'poppinsregular';
-    color: #000000;
+    font: 16px/20px $main_font;
+    color: $f_color1;
     //margin: auto;
     align-items: center;
-    background: #FFFFFF;
+    background: $bg_color2;
     border-radius: 14px;
     padding: 5px 11px 5px 4px;
     justify-content: space-between;
-    transition: 0.7s;
+    @include transition(0.7s);
 
     &:after{
       content: "";
@@ -437,7 +498,7 @@ nav.sub-menu-open .nav-links .hover-el {
       margin-top: 5px;
     }
     &:hover{
-      transform: scale(1.02);
+      @include transform(scale(1.02));
 
     }
   }
@@ -446,9 +507,25 @@ nav.sub-menu-open .nav-links .hover-el {
     max-width: 576px;
     max-height: 600px;
     overflow: hidden;
-    transition: 0.7s;
+    @include transition(0.7s);
+    @include max-screen (1199px) {
+      max-width: calc(576px - 15%);
+      max-height: calc(600px - 15%);
+    }
+    @include max-screen (925px) {
+      max-width: calc(576px - 25%);
+      max-height: calc(600px - 25%);
+    }
+    @include max-screen (804px) {
+      max-width: calc(576px - 30%);
+      max-height: calc(600px - 30%);
+    }
+    @include max-screen (768px) {
+      max-width: 576px;
+      max-height: 600px;
+    }
     &:hover{
-      transform: scale(1.02);
+      @include transform(scale(1.02));
     }
     img{
       display: block;
@@ -462,15 +539,15 @@ nav.sub-menu-open .nav-links .hover-el {
       width: 100%;
       box-sizing: border-box;
       h4{
-        font: 14px/20px 'poppinsregular';
-        color: #FFFFFF;
+        font: 14px/20px $main_font;
+        color: $f_color2;
         letter-spacing: 2px;
         text-transform: uppercase;
         margin-bottom: 15px;
       }
       p{
-        font: 14px/20px 'poppinsregular';
-        color: #C0C0C0;
+        font: 14px/20px $main_font;
+        color: $f_color3;
         margin-bottom: 22px;
       }
     }
@@ -482,6 +559,9 @@ nav.sub-menu-open .nav-links .hover-el {
   align-items: center;
   flex-wrap: wrap;
   gap: 16px;
+  @include max-screen (1199px) {
+    gap: 10px;
+  }
 }
 .ui-accordion {
   .ui-accordion-header {
@@ -495,6 +575,9 @@ nav.sub-menu-open .nav-links .hover-el {
     padding: 0;
     border: none;
     background-color: black;
+    @include max-screen (804px) {
+      overflow: inherit;
+    }
 
   }
   .d-flex{
@@ -515,7 +598,7 @@ nav.sub-menu-open .nav-links .hover-el {
 .ui-state-active, .ui-widget-content .ui-state-active, .ui-widget-header .ui-state-active, a.ui-button:active, .ui-button:active, .ui-button.ui-state-active:hover {
   border: 0;
   font-weight: normal;
-  color: #ffffff;
+  color: $f_color2;
 }
 :focus-visible {
   outline: none;
@@ -531,7 +614,7 @@ nav.sub-menu-open .nav-links .hover-el {
 }
 .ui-state-active, .ui-widget-content .ui-state-active, .ui-widget-header .ui-state-active, a.ui-button:active, .ui-button:active, .ui-button.ui-state-active:hover {
   border-radius: 9px;
-  background: #181a1a;
+  background: $hov_bg_color2;
 }
 .ui-icon {
   display: none;
@@ -543,14 +626,18 @@ nav.sub-menu-open .nav-links .hover-el {
   background-color: black;
   padding: 113px 0 140px;
   text-align: center;
+  @include max-screen(1199px){
+    padding-right: 55px;
+    padding-left: 55px;
+  }
   h2{
-    font: 40px/42px 'poppinsregular';
-    color: #FFFFFF;
+    font: 40px/42px $main_font;
+    color: $f_color2;
     margin-bottom: 15px;
   }
   h3{
-    font: 24px/30px 'poppinsregular';
-    color: #C0C0C0;
+    font: 24px/30px $main_font;
+    color: $f_color3;
     margin-bottom: 82px;
   }
   a{
@@ -583,7 +670,7 @@ nav.sub-menu-open .nav-links .hover-el {
       font-family: "Font Awesome 6 Free";
       font-weight: 900;
       content: "\f053";
-      color: #FFFFFF;
+      color: $f_color2;
       font-size: 30px;
     }
   }
@@ -595,7 +682,7 @@ nav.sub-menu-open .nav-links .hover-el {
       font-family: "Font Awesome 6 Free";
       font-weight: 900;
       content: "\f054";
-      color: #FFFFFF;
+      color: $f_color2;
       font-size: 30px;
     }
 
@@ -610,35 +697,39 @@ nav.sub-menu-open .nav-links .hover-el {
   background-color: black;
   padding: 113px 0 108px;
   text-align: center;
+  @include max-screen (680px) {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
   h2{
-    font: 40px/42px 'poppinsregular';
-    color: #FFFFFF;
+    font: 40px/42px $main_font;
+    color: $f_color2;
     max-width: 571px;
     margin: auto;
   }
   h3{
-    font: 24px/30px 'poppinsregular';
-    color: #C0C0C0;
+    font: 24px/30px $main_font;
+    color: $f_color3;
     margin-top: 15px;
     margin-bottom: 22px;
   }
 }
 
 .button{
-  background: #FFFFFF;
+  background: $bg_color2;
   border-radius: 14px;
   padding: 5px 11px 5px 4px;
   display: inline-flex;
   justify-content: space-between;
-  transition: 0.7s;
+  @include transition(0.7s);
   &:hover{
-    transform: scale(1.02);
+    @include transform(scale(1.02));
   }
   a{
     display: inline-flex;
     text-decoration: none;
-    font: 16px/20px 'poppinsregular';
-    color: #000000;
+    font: 16px/20px $main_font;
+    color: $f_color1;
     margin: auto;
     align-items: center;
     &:before{
@@ -668,56 +759,86 @@ nav.sub-menu-open .nav-links .hover-el {
   margin-right: 60px;
   margin-left: 60px;
   h3{
-    font: 14px/20px 'poppinsregular';
-    color: #FFFFFF;
+    font: 14px/20px $main_font;
+    color: $f_color2;
     letter-spacing: 2px;
     text-transform: uppercase;
   }
   p{
-    font: 14px/20px 'poppinsregular';
-    color: #C0C0C0;
+    font: 14px/20px $main_font;
+    color: $f_color3;
   }
 }
 .fuji {
   background-image: url('../images/bg-fuji.jpg');
   background-attachment: fixed;
+  @include max-screen(1320px){
+    background-attachment: scroll;
+  }
+  @include max-screen (680px) {
+    background-image: url('../images/bg-fuji.webp');
+  }
 }
 .leafs {
   background-image: url('../images/bg-leafs.jpg');
   background-attachment: fixed;
+  @include max-screen(1320px){
+    background-attachment: scroll;
+  }
+  @include max-screen (680px) {
+    background-image: url('../images/bg-leafs.webp');
+  }
 }
 .himalayas {
   background-image: url('../images/bg-himalayas.jpg');
   background-attachment: fixed;
+  @include max-screen(1320px){
+    background-attachment: scroll;
+  }
+  @include max-screen (680px) {
+    background-image: url('../images/bg-himalayas.webp');
+  }
 }
 
 
 .tools{
   min-height: 540px;
-  background-color: #000000;
+  background-color: $bg_color1;
   display: flex;
   align-items: center;
   position: relative;
   padding-left: 100px;
+  @include max-screen(1320px){
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+  @include max-screen(680px){
+    padding-left: 25px;
+    padding-right: 25px;
+  }
   h3{
-    font: 14px/20px 'poppinsregular';
+    font: 14px/20px $main_font;
     letter-spacing: 2px;
     text-transform: uppercase;
-    color: #C0C0C0;
+    color: $f_color3;
     margin-bottom: 6px;
     margin-top: 20px;
   }
   h2{
-    font: 28px/32px 'poppinsregular';
-    color: #FFFFFF;
+    font: 28px/32px $main_font;
+    color: $f_color2;
     margin-bottom: 14px;
     max-width: 514px;
 
   }
   .central_box {
+    @include max-screen(1199px){
+      margin: inherit;
+      width: calc(50% - 20px);
+    }
     p {
-      font: 14px/20px 'poppinsregular';
-      color: #FFFFFF;
+      font: 14px/20px $main_font;
+      color: $f_color2;
       margin-bottom: 20px;
       max-width: 514px;
     }
@@ -731,6 +852,9 @@ nav.sub-menu-open .nav-links .hover-el {
     width: 50%;
     background-size: cover;
     background-position: center;
+    @include max-screen (680px) {
+      background-image: url("../images/bg-sweden.webp");
+    }
   }
 }
 .central_box{
@@ -744,6 +868,14 @@ footer{
   background-color: black;
   padding-top: 100px;
   padding-bottom: 100px;
+  @include max-screen(1320px){
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+  @include max-screen(680px){
+    padding-left: 25px;
+    padding-right: 25px;
+  }
   form{
     display: flex;
     box-sizing: border-box;
@@ -761,12 +893,12 @@ footer{
       width: 100%;
       height: 38px;
       margin-right: 6px;
-      font: 20px 'poppinsregular';
+      font: 20px $main_font;
 
 
     }
     .button_submit{
-      background: #000000;
+      background: $bg_color1;
       border-radius: 11px;
       max-width: 63px;
       width: 100%;
@@ -784,27 +916,41 @@ footer{
   .logo_box {
     max-width: 584px;
     p {
-      font: 13px/20px 'poppinsregular';
-      color: #C0C0C0;
+      font: 13px/20px $main_font;
+      color: $f_color3;
       margin-top: 20px;
     }
   }
   .list_box{
     display: flex;
     justify-content: left;
+    @include max-screen(1199px){
+      margin-left: 100px;
+    }
+    @include max-screen (880px) {
+      display: block;
+      justify-content: left;
+      margin-left: 100px;
+    }
+    @include max-screen (680px) {
+      margin-left: 15px;
+    }
     a{
-      font: 14px/20px 'poppinsregular';
-      color: #FFFFFF;
+      font: 14px/20px $main_font;
+      color: $f_color2;
     }
     ul{
       width: 221px;
       margin-left: 16px;
       list-style: none;
+      @include max-screen (880px) {
+        margin-bottom: 30px;
+      }
       li{
         margin-bottom: 10px;
         &:first-of-type{
-          font: 14px/20px 'poppinsregular';
-          color: #C0C0C0;
+          font: 14px/20px $main_font;
+          color: $f_color3;
           letter-spacing: 2px;
           text-transform: uppercase;
         }
@@ -815,22 +961,31 @@ footer{
 .subscribe_box{
   padding-top: 36px;
   padding-bottom: 36px;
-  border-top: 2px solid #FFFFFF;
-  border-bottom: 2px solid #FFFFFF;
+  border-top: 2px solid $bg_color2;
+  border-bottom: 2px solid $bg_color2;
   margin-bottom: 56px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  @include max-screen (834px) {
+    display: block;
+  }
   h3{
-    font: 14px/20px 'poppinsregular';
-    color: #FFFFFF;
+    font: 14px/20px $main_font;
+    color: $f_color2;
     letter-spacing: 2px;
     text-transform: uppercase;
     margin-bottom: 20px;
+    @include max-screen (834px) {
+      margin-bottom: 10px;
+    }
   }
   p{
-    font: 13px/20px 'poppinsregular';
-    color: #C0C0C0;
+    font: 13px/20px $main_font;
+    color: $f_color3;
+    @include max-screen (834px) {
+      margin-bottom: 20px;
+    }
   }
 }
 .social_box{
@@ -838,8 +993,8 @@ footer{
   justify-content: space-between;
   align-items: center;
   p{
-    font: 14px/20px 'poppinsregular';
-    color: #C0C0C0;
+    font: 14px/20px $main_font;
+    color: $f_color3;
   }
   .social_items{
     display: flex;
