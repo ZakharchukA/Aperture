@@ -399,6 +399,9 @@ nav.sub-menu-open .nav-links .hover-el {
       margin-right: 15px;
       margin-left: 15px;
     }
+    @include max-screen (428px) {
+      font: 12px/16px $main_font;
+    }
   }
 }
 .fixed_information{
@@ -406,11 +409,19 @@ nav.sub-menu-open .nav-links .hover-el {
   bottom: 40px;
   right: 40px;
   list-style: none;
+  @include max-screen (428px) {
+    bottom: calc(5% - 8px);
+    right: calc(50% - 108px);
+  }
   li {
     font: 12px/12px $main_font;
     color: $f_color2;
     display: inline-flex;
     margin-left: 16px;
+    @include max-screen (428px) {
+      font: 10px/10px $main_font;
+      margin-left: 10px;
+    }
     &:before{
       content: "";
       background-image: url("../images/shutter-icon-Light.svg");
@@ -418,6 +429,13 @@ nav.sub-menu-open .nav-links .hover-el {
       height: 16px;
       display: block;
       margin-right: 6px;
+      @include max-screen (428px) {
+        background-size: contain;
+        background-repeat: no-repeat;
+        width: 12px;
+        height: 12px;
+        margin-right: 3px;
+      }
     }
     &:nth-child(2):before{
       content: "";
@@ -426,6 +444,13 @@ nav.sub-menu-open .nav-links .hover-el {
       height: 16px;
       display: block;
       margin-right: 6px;
+      @include max-screen (428px) {
+        background-size: contain;
+        background-repeat: no-repeat;
+        width: 12px;
+        height: 12px;
+        margin-right: 3px;
+      }
     }
     &:nth-child(3):before{
       content: "";
@@ -434,6 +459,13 @@ nav.sub-menu-open .nav-links .hover-el {
       height: 16px;
       display: block;
       margin-right: 7px;
+      @include max-screen (428px) {
+        background-size: contain;
+        background-repeat: no-repeat;
+        width: 12px;
+        height: 12px;
+        margin-right: 3px;
+      }
     }
     &:last-of-type:before{
       content: "";
@@ -442,6 +474,13 @@ nav.sub-menu-open .nav-links .hover-el {
       height: 16px;
       display: block;
       margin-right: 5px;
+      @include max-screen (428px) {
+        background-size: contain;
+        background-repeat: no-repeat;
+        width: 12px;
+        height: 12px;
+        margin-right: 3px;
+      }
     }
   }
 }
@@ -458,6 +497,9 @@ nav.sub-menu-open .nav-links .hover-el {
   background-color: $bg_color1;
   @include max-screen(1199px){
     padding: 60px 15px 50px 15px;
+  }
+  @include max-screen(428px){
+    padding: 60px 10px 50px 10px;
   }
   h2{
     font: 40px/42px $main_font;
@@ -813,9 +855,10 @@ nav.sub-menu-open .nav-links .hover-el {
     padding-right: 50px;
   }
   @include max-screen(680px){
-    padding-left: 25px;
+    padding-left: 45px;
     padding-right: 25px;
   }
+
   h3{
     font: 14px/20px $main_font;
     letter-spacing: 2px;
@@ -935,9 +978,19 @@ footer{
     @include max-screen (680px) {
       margin-left: 15px;
     }
+    @include max-screen (577px) {
+      width: 219px;
+    }
+    @include max-screen (428px) {
+      display: block;
+      justify-content: left;
+    }
     a{
       font: 14px/20px $main_font;
       color: $f_color2;
+      @include max-screen (428px) {
+        font: 12px/16px $main_font;
+      }
     }
     ul{
       width: 221px;
@@ -946,8 +999,15 @@ footer{
       @include max-screen (880px) {
         margin-bottom: 30px;
       }
+      @include max-screen (428px) {
+        margin-bottom: 30px;
+        max-width: 150px;
+      }
       li{
         margin-bottom: 10px;
+        @include max-screen (428px) {
+          margin-bottom: 5px;
+        }
         &:first-of-type{
           font: 14px/20px $main_font;
           color: $f_color3;
@@ -992,14 +1052,24 @@ footer{
   display: flex;
   justify-content: space-between;
   align-items: center;
+  @include max-screen (577px) {
+    display: block;
+    text-align: center;
+  }
   p{
     font: 14px/20px $main_font;
     color: $f_color3;
+    @include max-screen (577px) {
+      margin-bottom: 25px;
+    }
   }
   .social_items{
     display: flex;
     list-style: none;
     align-items: center;
+    @include max-screen (577px) {
+      justify-content: center;
+    }
     li {
       &:first-of-type {
         margin-right: 20px;
